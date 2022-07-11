@@ -1,13 +1,18 @@
+import React, { useState } from 'react';
 import './App.css';
 import 'react-toastify/dist/ReactToastify.css';
 
-import ReactAstronault, { getAllAstronauts } from 'react-astronaut';
+import ReactAstronault, {
+  getAllAstronauts,
+  getAstronauts,
+} from 'react-astronaut';
 import { IoCopyOutline } from 'react-icons/io5';
 import { FaUserAstronaut } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
-  const astronauts = getAllAstronauts();
+  const [astronauts, setAstronauts] = useState(getAllAstronauts());
+  const [search, setSearch] = useState('');
 
   const copyImport = () => {
     navigator.clipboard.writeText(
@@ -73,6 +78,19 @@ function App() {
       </div>
 
       <div className="body">
+        <div className="searchArea">
+          <input
+            className="input"
+            placeholder="🔎 Digite para procurar..."
+            value={search}
+            onChange={(e) => {
+              const nlist = getAstronauts(1, 250, e.target.value);
+              console.log(nlist);
+              setSearch(e.target.value);
+              setAstronauts(nlist.astronauts);
+            }}
+          />
+        </div>
         <div className="imagesArea">
           {astronauts?.map((astronaut) => (
             <div
@@ -86,6 +104,10 @@ function App() {
               <p className="astronautCode">{astronaut.code}</p>
             </div>
           ))}
+
+          {astronauts?.length < 1 && (
+            <p className="empty">Nenhum astronauta encontrado...</p>
+          )}
         </div>
       </div>
     </div>
