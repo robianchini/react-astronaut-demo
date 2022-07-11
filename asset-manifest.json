@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-astronaut-demo/static/css/main.8c1314e8.css",
+    "main.js": "/react-astronaut-demo/static/js/main.df48bc03.js",
+    "index.html": "/react-astronaut-demo/index.html",
+    "main.8c1314e8.css.map": "/react-astronaut-demo/static/css/main.8c1314e8.css.map",
+    "main.df48bc03.js.map": "/react-astronaut-demo/static/js/main.df48bc03.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c1314e8.css",
+    "static/js/main.df48bc03.js"
+  ]
+}
