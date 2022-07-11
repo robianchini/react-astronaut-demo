@@ -7752,10 +7752,10 @@ react-app-polyfill@^3.0.0:
     regenerator-runtime "^0.13.9"
     whatwg-fetch "^3.6.2"
 
-react-astronaut@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/react-astronaut/-/react-astronaut-1.0.11.tgz#6ce5060b85b9e5ea8982dac052145dffdb0b94e5"
-  integrity sha512-uOiTCruxqG1TKoSauvcn24SDBYC/PU9gq04rcS/VtwHfEjHleQ1bzzcG2gPH1sDr8DD1316fmRtGImga6S86jw==
+react-astronaut@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/react-astronaut/-/react-astronaut-1.0.12.tgz#ece351d2bc1e12f89be8a0009df98bef9d11a285"
+  integrity sha512-YwxT7zB++LfnFONf/1Y1jKHV1CtFSjMrBiQaPHbJH7T7rfhlGd3HxPnQ73DDy1UMI5UikafFfkGOk5NZkCLMpg==
   dependencies:
     react "^18.2.0"
     react-dom "^18.2.0"
